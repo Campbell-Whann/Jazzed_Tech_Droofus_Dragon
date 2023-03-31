@@ -37,7 +37,7 @@ duration = pulseIn(echoPin, HIGH);
 distance= duration*0.034/2;
 
 safetyDistance = distance;
-if (safetyDistance <= 5){
+if (safetyDistance <= 10){
   digitalWrite(buzzer, HIGH);
   digitalWrite(ledPin, HIGH);
 }
